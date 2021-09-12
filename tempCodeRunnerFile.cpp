@@ -1,1 +1,0 @@
-    printf("INPUT NUMBER = %d", inputNumber);
