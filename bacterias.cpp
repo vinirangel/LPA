@@ -19,13 +19,13 @@ int main(){
     //Calcula o total inicial de bacterias
     if(oldestColony == 0)
     {
-        scanf(" %d", &dias);
-        fflush(stdin);
+	cin >> dias;
         if(dias == 0)
-            break;
-        fgets(input, sizeof(input), stdin);
-        sscanf(input, " %d %d %d %d", &colonias[0], &colonias[1], &colonias[2], &colonias[3]);
-        total = total + colonias[0] + colonias[1] + colonias[2] + colonias[3];
+	{
+            	break;
+	}
+        cin >> colonias[0] >> colonias[1] >> colonias[2] >> colonias[3];
+	total = total + colonias[0] + colonias[1] + colonias[2] + colonias[3];
         total*=2;
         total-= colonias[0];
     }
@@ -36,7 +36,7 @@ int main(){
     }
     //Reseta os contadores do loop e outros valores relevantes
     if(counter == dias-1){
-        printf("%d\n",total);
+        printf("\n%d",total);
         colonias[0] = 0, colonias[1] = 0, colonias[2] = 0, colonias[3] = 0;
         oldestColony = 0;
         counter = 4;
