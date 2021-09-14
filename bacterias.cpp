@@ -20,6 +20,7 @@ int main(){
     if(oldestColony == 0)
     {
 	cin >> dias;
+	fflush(stdin);
         if(dias == 0)
 	{
             	break;
