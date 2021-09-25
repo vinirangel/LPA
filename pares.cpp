@@ -6,7 +6,7 @@
 using namespace std;
 
 /*
-Este algoritmo possui complexidade O(n^2), iterando sobre cada par de valores uma vez
+    Este algoritmo possui complexidade O(n^2), iterando sobre cada par de valores uma vez
 */
 
 int main(){
